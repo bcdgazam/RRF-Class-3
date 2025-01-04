@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table & Forms</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Heading 1</th>
+          <th>Heading 2</th>
+          <th>Heading 3</th>
+          <th>Heading 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Content 1</td>
+          <td colspan="2">Content 2</td>
+          <td>Content 4</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td rowspan="4">Content 3</td>
+          <td>Content 4</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 4</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Contact Us</h2>
+    <form>
+      <p>
+        <label for="yourName">Name: </label
+        ><input id="yourName" type="text" placeholder="Enter Your Name" />
+      </p>
+      <p><label>Password: </label><input type="password" /></p>
+      <p><label for="email">Email: </label><input type="email" /></p>
+      <p><label for="file">Upload file </label><input type="file" /></p>
+      <p>
+        <label for="checkbox">Check</label><input type="checkbox" required />
+      </p>
+      <p>
+        <label for="minMax">Number:</label>
+        <input id="minMax" type="number" min="0" max="1000" />
+      </p>
+      <p>
+        <label for="2004">2004:</label>
+        <input name="radio" type="radio" value="2004" id="2004"/>
+      </p>
+      <p>
+        <label for="2005">2005:</label>
+        <input name="2005" type="radio" value="2005" id="2005"/>
+      </p>
+
+      <textarea
+        rows="10"
+        cols="50"
+        name=""
+        id=""
+        placeholder="Write message"
+      ></textarea>
+      <p>
+        <label for="select">Select </label
+        ><select name="" id="">
+          <option value="">Select</option>
+          <option value="">One</option>
+          <option value="">Two</option>
+          <option value="">Three</option>
+        </select>
+      </p>
+    </form>
+  </body>
+</html>
